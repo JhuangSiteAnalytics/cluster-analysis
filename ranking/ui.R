@@ -1,4 +1,4 @@
-shinyUI(fluidPage(
+ranking.box <- fluidPage(
   headerPanel(""),
   sidebarPanel(
     checkboxInput(inputId = "update",
@@ -10,6 +10,5 @@ shinyUI(fluidPage(
   mainPanel(
     tabsetPanel(type = "tabs",
                 tabPanel("Feature Ranking", dataTableOutput("rankTable")))
-    )
   )
 )

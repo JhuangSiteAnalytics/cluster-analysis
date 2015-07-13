@@ -8,5 +8,9 @@ server <- function(input, output, session) {
 
   ## CLUSTER --------------------------------------------------------------------
   source("clustering/server.R", local=TRUE)
+
+  ## RANKING --------------------------------------------------------------------
+  source("ranking/server.R", local=TRUE)
+
 }
 

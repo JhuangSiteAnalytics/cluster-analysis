@@ -22,6 +22,15 @@ cluster <- tabItem(
   cluster.box
 )
 
+## RANKING ---------------------------------------------------------------------
+source('ranking/ui.R', local=TRUE)
+
+ranking <- tabItem(
+  tabName = "ranking",
+  ranking.box
+)
+
+
 ## ACKNOWLEDGEMENTS ------------------------------------------------------------
 acknowledgements <- tabItem(
   tabName = "acknowledgements",
@@ -44,6 +53,7 @@ body <- dashboardBody(
   tabItems(
     upload,
     cluster,
+    ranking,
     acknowledgements
   )
 )
