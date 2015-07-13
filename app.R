@@ -3,22 +3,13 @@ library(shiny)
 library(shinydashboard)
 library(shinyapps)
 
-## Define structure of dashboard
-source("header.R")
-source("sidebar.R")
-source("body.R")
-
-ui <- dashboardPage(
-    skin = "red",
-    header, sidebar, body
-)
-
-## Define IO
-source("server.R") ## function(input, out)
-
-## Run Locally
-shinyApp(ui, server)
+## Run Locally if interactive (but not when deployed to shinyapps.io
+if(interactive()) {
+  source("ui.R")
+  source("server.R") ## function(input, out)
+  shinyApp(ui, server)
+}
 
 ## or Deploy App
-shinyapps::deployApp(appName="Sparse Data Cluster", account="sparsedata")
+## shinyapps::deployApp(appName="SparseData-Cluster", account="sparsedata")
 
