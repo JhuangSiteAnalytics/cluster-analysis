@@ -4,8 +4,6 @@ Sparse Data Parser (SDP)
 ## Objective
 The goal of this project is to build a beautiful parser of data that can interpret matrix data (with a specific use-case being gene expression matrices) and construct basic interactive plots for data exploration and preliminary analyses.
 
-## Requirements
-This requires font-awesome for icons at http://fontawesome.io/icons/
 ## Organization
 The application is organized into separate files as follows:
 
