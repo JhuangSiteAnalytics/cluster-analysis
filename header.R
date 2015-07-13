@@ -1,5 +1,5 @@
 header <- dashboardHeader(
-  title = "Sparse Data Parser",
+  title = "SparseData Cluster",
   ## MESSAGES
   dropdownMenu(
     type = "messages",

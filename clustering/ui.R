@@ -1,4 +1,4 @@
-shinyUI(fluidPage(
+cluster.box <- fluidPage(
   headerPanel(""),
   sidebarPanel(
     checkboxInput(inputId = "update",
@@ -19,7 +19,7 @@ shinyUI(fluidPage(
     checkboxInput(inputId = "chooseBreaks",
                   label = strong("Force color key to start at 0"),
                   value = FALSE),
-    
+
     tags$hr(),
     checkboxInput(inputId = "rem",
                   label = strong("Choose Features to Exclude"),
@@ -37,13 +37,12 @@ shinyUI(fluidPage(
     ##   condition = "input.incl == true",
     ##   selectizeInput('toIncl', "Include Only", choices=sort(rownames(datGlobal)), multiple=TRUE)
     ## )
-    
+
   ),
   mainPanel(
     tabsetPanel(type = "tabs",
                 tabPanel("Plot", plotOutput('plot1', height = "500px", width = "500px")),
                 tabPanel("Summary", verbatimTextOutput("summary") )
-      )
-    )
+                )
   )
 )

@@ -1,7 +1,5 @@
-library(shiny)
-
-shinyUI(fluidPage(
-  titlePanel("Uploading Files"),
+upload.box <- fluidPage(
+  titlePanel("Upload Your Own File For Analysis"),
   sidebarLayout(
     sidebarPanel(
       fileInput('file1', 'Choose CSV File',
@@ -33,4 +31,4 @@ shinyUI(fluidPage(
       tableOutput('contents')
     )
   )
-))
+)

@@ -1,9 +1,10 @@
 ## app.R ##
 library(shiny)
 library(shinydashboard)
+library(shinyapps)
 
 ## Define structure of dashboard
-source("header.R") 
+source("header.R")
 source("sidebar.R")
 source("body.R")
 
@@ -15,5 +16,9 @@ ui <- dashboardPage(
 ## Define IO
 source("server.R") ## function(input, out)
 
-## Run
+## Run Locally
 shinyApp(ui, server)
+
+## or Deploy App
+shinyapps::deployApp(appName="Sparse Data Cluster", account="sparsedata")
+

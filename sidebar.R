@@ -10,7 +10,7 @@ sidebar <- dashboardSidebar(
         menuItem(
             "Cluster",
             tabName = "cluster",
-            icon = icon("line-chart")
+            icon = icon("sitemap")
         ),
         menuItem(
             "Acknowledgements",
