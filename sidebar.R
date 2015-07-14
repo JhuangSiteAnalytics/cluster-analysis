@@ -1,7 +1,12 @@
 ## SIDEBAR
 
 sidebar <- dashboardSidebar(
-    sidebarMenu(
+  sidebarMenu(
+        menuItem(
+            "Get Started",
+            tabName = "start",
+            icon = icon("play")
+        ),
         menuItem(
             "Upload",
             tabName = "upload",

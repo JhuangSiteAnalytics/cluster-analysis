@@ -1,3 +1,8 @@
-Goal of this site is to allow users to upload their own data and perform clustering analysis as well as identify which features are important for clustering.
+# Goal
+SparseData Cluster is a tool for clustering and related analyses on any dataset
 
-The specific application in mind was analyzing gene expression data from RNA-Seq experiments but the same analysis tools can be applied in other areas
+# Application
+The specific application that sparked this application was analyzing gene expression data from RNA-Seq experiments but the same types of analysis can be applied in numerous areas
+
+# Example
+Don't have your own data handy?  Download [mtcars](https://internal.shinyapps.io/gallery/066-upload-file/_w_ea0a7d8b/mtcars.csv)

@@ -1,3 +1,5 @@
+options(shiny.maxRequestSize = 10*1024^2) # raise limit to 10 Mb
+
 output$contents <- renderTable({
 
   inFile <- input$file1

@@ -1,3 +1,11 @@
+## GET STARTED ----------------------------------------------------------------------
+source('introduction/intro.R', local=TRUE)
+
+start <- tabItem(
+  tabName = "start",
+  start.box
+)
+
 ## UPLOAD ----------------------------------------------------------------------
 source('fileUpload/ui.R', local=TRUE)
 
@@ -42,7 +50,7 @@ acknowledgements <- tabItem(
     ),
     tags$p(
       tags$small(tags$em(
-        "Version 0.0.2000 - Last Updated 2015-07-13"
+        "Version 0.0.2002 - Last Updated 2015-07-14"
       ))
     )
   )
@@ -51,6 +59,7 @@ acknowledgements <- tabItem(
 ## BODY ------------------------------------------------------------------------
 body <- dashboardBody(
   tabItems(
+    start,
     upload,
     cluster,
     ranking,

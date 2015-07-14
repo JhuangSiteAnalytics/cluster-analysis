@@ -25,6 +25,13 @@ upload.box <- fluidPage(
                    ''),
       tags$hr(),
       checkboxInput('log2', 'Log 2 Transform', TRUE)
+      tags$hr(),
+      p('If you want a sample .csv or .tsv file to upload,',
+        'you can first download the sample',
+        a(href = 'https://internal.shinyapps.io/gallery/066-upload-file/_w_95859387/mtcars.csv', 'mtcars.csv'), 'or',
+        a(href = 'https://internal.shinyapps.io/gallery/066-upload-file/_w_95859387/pressure.tsv', 'pressure.tsv'),
+        'files, and then try uploading them.'
+        )
     ),
     mainPanel(
       ## dataTableOutput("table")
