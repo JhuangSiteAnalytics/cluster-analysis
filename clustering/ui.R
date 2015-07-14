@@ -1,9 +1,7 @@
 cluster.box <- fluidPage(
   headerPanel(""),
   sidebarPanel(
-    checkboxInput(inputId = "update",
-                  label = strong("Update Data After Upload (Required)"),
-                  value = FALSE),
+    ## actionButton("update", "Update Data"),
     selectInput('method', 'Correlation Method',
                 c("pearson", "kendall", "spearman"), selected="pearson"),
     selectInput('distMethod', 'Distance Method for Clustering',

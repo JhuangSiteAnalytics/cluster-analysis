@@ -2,6 +2,7 @@
 library(shiny)
 library(shinydashboard)
 library(shinyapps)
+library(markdown)
 
 ## Run Locally if interactive (but not when deployed to shinyapps.io
 if(interactive()) {

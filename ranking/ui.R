@@ -1,11 +1,9 @@
 ranking.box <- fluidPage(
   headerPanel(""),
   sidebarPanel(
-    checkboxInput(inputId = "update",
-                  label = strong("Update Data After Upload (Required)"),
-                  value = FALSE),
-    uiOutput("sample1"),
-    uiOutput("sample2")
+    ## actionButton("update", "Update Data"),
+    uiOutput("obs1"),
+    uiOutput("obs2")
   ),
   mainPanel(
     tabsetPanel(type = "tabs",

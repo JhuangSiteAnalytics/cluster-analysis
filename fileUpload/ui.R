@@ -9,7 +9,7 @@ upload.box <- fluidPage(
       tags$hr(),
       checkboxInput('header', 'Header', TRUE),
       ## Tranpose if samples are in rows
-      radioButtons('transpose', 'Samples in:',
+      radioButtons('transpose', 'Observations in:',
                    c(Columns=FALSE,
                      Rows=TRUE),
                    TRUE),

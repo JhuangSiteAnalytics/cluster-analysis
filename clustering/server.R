@@ -1,10 +1,10 @@
-myData <- reactive({
-  ## Update the data with checkbox input
-  if(input$update) {
-    dat <- datGlobal
-    dat
-  }
-})
+## myData <- reactive({
+##   ## Update the data with checkbox input
+##   if(input$update) {
+##     dat <- datGlobal
+##     dat
+##   }
+## })
 
 ## Create 2 output panels that depend on the data passed in
 output$condPanel1 <- renderUI({

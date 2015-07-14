@@ -11,6 +11,5 @@ server <- function(input, output, session) {
 
   ## RANKING --------------------------------------------------------------------
   source("ranking/server.R", local=TRUE)
-
 }
 

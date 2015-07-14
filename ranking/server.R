@@ -1,19 +1,19 @@
-myData <- reactive({
-  ## Update the data with checkbox input
-  if(input$update) {
-    dat <- datGlobal
-    dat
-  }
-})
+## myData <- reactive({
+##   ## Update the data with checkbox input
+##   if(input$update) {
+##     dat <- datGlobal
+##     dat
+##   }
+## })
 
-## Create 2 output panels to choose the samples
-output$sample1 <- renderUI({
-  selectInput('sam1', "Choose Sample 1",
+## Create 2 output panels to choose the observations
+output$obs1 <- renderUI({
+  selectInput('sam1', "Choose Observation 1",
               choices=sort(colnames(myData())),
               multiple=FALSE)
 })
-output$sample2 <- renderUI({
-  selectInput('sam2', "Choose Sample 2",
+output$obs2 <- renderUI({
+  selectInput('sam2', "Choose Observation 2",
               choices=sort(colnames(myData())),
               multiple=FALSE)
 })
