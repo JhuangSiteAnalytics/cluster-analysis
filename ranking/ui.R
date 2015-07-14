@@ -10,5 +10,6 @@ ranking.box <- fluidPage(
   mainPanel(
     tabsetPanel(type = "tabs",
                 tabPanel("Feature Ranking", dataTableOutput("rankTable")))
-  )
+  ),
+  includeMarkdown('footer.md')
 )

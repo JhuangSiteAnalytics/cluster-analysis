@@ -1,7 +1,5 @@
-library(shiny)
-
 # Define UI for random distribution application
-shinyUI(fluidPage(
+upload.box <- fluidPage(
 
   # Application title
   titlePanel("Data"),
@@ -19,5 +17,6 @@ shinyUI(fluidPage(
           tabPanel("Summary", verbatimTextOutput("summary"))
       )
     )
-  )
-))
+  ),
+  includeMarkdown('footer.md')
+)

@@ -6,6 +6,6 @@ source("sidebar.R")
 source("body.R")
 
 ui <- dashboardPage(
-    skin = "red",
-    header, sidebar, body
+  skin = "red",
+  header, sidebar, body
 )

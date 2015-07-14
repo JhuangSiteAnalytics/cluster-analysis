@@ -40,24 +40,16 @@ ranking <- tabItem(
 
 
 ## ACKNOWLEDGEMENTS ------------------------------------------------------------
+source('acknowledgements/acknowledgements.R', local=TRUE)
+
 acknowledgements <- tabItem(
   tabName = "acknowledgements",
-  tags$p("Powered by RStudio Shiny + shinydashboard, Github,
-            and Coffee (the caffeinated beverage)."),
-  tags$footer(
-    tags$p(
-      tags$a("View Source Code on Github", href = "https://github.com/sparsedata/cluster-analysis")
-    ),
-    tags$p(
-      tags$small(tags$em(
-        "Version 0.0.2002 - Last Updated 2015-07-14"
-      ))
-    )
-  )
+  ack.box
 )
 
 ## BODY ------------------------------------------------------------------------
 body <- dashboardBody(
+  includeCSS("www/custom.css"),
   tabItems(
     start,
     upload,

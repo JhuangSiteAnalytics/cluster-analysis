@@ -24,7 +24,7 @@ upload.box <- fluidPage(
                      'Single Quote'="'"),
                    ''),
       tags$hr(),
-      checkboxInput('log2', 'Log 2 Transform', TRUE)
+      checkboxInput('log2', 'Log 2 Transform', TRUE),
       tags$hr(),
       p('If you want a sample .csv or .tsv file to upload,',
         'you can first download the sample',
@@ -37,5 +37,6 @@ upload.box <- fluidPage(
       ## dataTableOutput("table")
       tableOutput('contents')
     )
-  )
+  ),
+  includeMarkdown('footer.md')
 )

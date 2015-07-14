@@ -31,3 +31,5 @@ ranks <- reactive({
 output$rankTable <- renderDataTable({
   ranks()
 }, options = list(lengthMenu = c(5, 10, 30, 50, 150), pageLength = 10))
+
+

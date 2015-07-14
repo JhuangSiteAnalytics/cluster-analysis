@@ -44,5 +44,6 @@ cluster.box <- fluidPage(
                 tabPanel("Plot", plotOutput('plot1', height = "500px", width = "500px")),
                 tabPanel("Summary", verbatimTextOutput("summary") )
                 )
-  )
+  ),
+  includeMarkdown('footer.md')
 )
