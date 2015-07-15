@@ -18,7 +18,7 @@ output$obs2 <- renderUI({
 
 ## Rank features
 ranks <- reactive({
-  if(is.null(datGlobal)) {
+  if( is.null(datGlobal) && (input$update == updGlobal) ) {
     stop("No data uploaded")
   }
   if(input$update > updGlobal) {

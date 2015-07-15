@@ -1,5 +1,3 @@
-library(shinydashboard)
-
 ## Define structure of dashboard
 source("header.R")
 source("sidebar.R")

@@ -18,7 +18,7 @@ output$condPanel2 <- renderUI({
 
 
 output$summary <- renderPrint({
-  if(is.null(datGlobal)) {
+  if( is.null(datGlobal) && (input$update == updGlobal) ) {
     stop("No data uploaded")
   }
   summary(datGlobal)
@@ -27,7 +27,7 @@ output$summary <- renderPrint({
 
 ## Combine the selected variables into a new data frame
 selectedData <- reactive({
-  if(is.null(datGlobal)) {
+  if( is.null(datGlobal) && (input$update == updGlobal) ) {
     stop("No data uploaded")
   }
   features <- rownames(datGlobal)

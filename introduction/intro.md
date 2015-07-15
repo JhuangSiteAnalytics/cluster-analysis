@@ -8,4 +8,4 @@ The specific application that sparked this application was analyzing gene expres
 Don't have your own data handy?  Download [mtcars](https://internal.shinyapps.io/gallery/066-upload-file/_w_ea0a7d8b/mtcars.csv) and then upload it in the **Upload** tab.
 
 # Documentation
-For more information, see the source code and README on the [Github page](https://github.com/sparsedata/cluster-analysis). **NOTE**: Currently the documentation is sparse but we are working on updating this.
+For more information, see the source code and README on the [Github page](https://github.com/sparsedata/cluster-analysis).
