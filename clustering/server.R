@@ -1,17 +1,9 @@
-## myData <- reactive({
-##   ## Update the data with checkbox input
-##   if(input$update) {
-##     dat <- datGlobal
-##     dat
-##   }
-## })
-
 ## Create 2 output panels that depend on the data passed in
 output$condPanel1 <- renderUI({
   conditionalPanel(
     condition = "input.rem == true",
     selectizeInput('toRm', "Exclude",
-                   choices=sort(rownames(myData())),
+                   choices=sort(rownames(datGlobal)),
                    multiple=TRUE)
   )
 })
@@ -19,20 +11,26 @@ output$condPanel2 <- renderUI({
   conditionalPanel(
     condition = "input.incl == true",
     selectizeInput('toIncl', "Include Only",
-                   choices=sort(rownames(myData())),
+                   choices=sort(rownames(datGlobal)),
                    multiple=TRUE)
   )
 })
 
 
 output$summary <- renderPrint({
-  summary(myData())
+  if(is.null(datGlobal)) {
+    stop("No data uploaded")
+  }
+  summary(datGlobal)
 })
 
 
 ## Combine the selected variables into a new data frame
 selectedData <- reactive({
-  features <- rownames(myData())
+  if(is.null(datGlobal)) {
+    stop("No data uploaded")
+  }
+  features <- rownames(datGlobal)
   if (input$rem && input$incl) {
     stop("Cannot select both features to include and features to exclude")
   }
@@ -41,7 +39,10 @@ selectedData <- reactive({
   } else if(input$incl) {
     features <- input$toIncl
   }
-  myData()[features, ]
+  if(input$update > updGlobal) {
+    message("Updating Data...")
+  }
+  return(datGlobal[features, ])
 })
 
 output$plot1 <- renderPlot({

@@ -7,6 +7,9 @@ upload.box <- fluidPage(
                   'text/comma-separated-values,text/plain',
                   '.csv')),
       tags$hr(),
+      actionButton("update", "Update Data", icon=icon("refresh")),
+      tags$small("Update to see preview"),
+      tags$hr(),
       checkboxInput('header', 'Header', TRUE),
       ## Tranpose if samples are in rows
       radioButtons('transpose', 'Observations in:',

@@ -1,7 +1,6 @@
 ranking.box <- fluidPage(
   headerPanel(""),
   sidebarPanel(
-    ## actionButton("update", "Update Data"),
     uiOutput("obs1"),
     uiOutput("obs2")
   ),
