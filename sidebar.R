@@ -18,7 +18,7 @@ sidebar <- dashboardSidebar(
             icon = icon("sitemap")
         ),
         menuItem(
-            "Rank Features",
+            "Rank",
             tabName = "ranking",
             icon = icon("bars")
         ),

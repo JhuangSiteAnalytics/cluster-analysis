@@ -1,5 +1,5 @@
 ranking.box <- fluidPage(
-  headerPanel(""),
+  headerPanel("Rank Features"),
   sidebarPanel(
     uiOutput("obs1"),
     uiOutput("obs2")

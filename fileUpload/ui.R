@@ -1,5 +1,5 @@
 upload.box <- fluidPage(
-  titlePanel("Upload Your Own File For Analysis"),
+  titlePanel("Upload File To Begin Analyses"),
   sidebarLayout(
     sidebarPanel(
       fileInput('file1', 'Choose CSV File',

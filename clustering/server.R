@@ -1,5 +1,8 @@
 ## Create 2 output panels that depend on the data passed in
 output$condPanel1 <- renderUI({
+  if(input$update > updGlobal) {
+    message("Updating Data...")
+  }
   conditionalPanel(
     condition = "input.rem == true",
     selectizeInput('toRm', "Exclude",
@@ -8,6 +11,9 @@ output$condPanel1 <- renderUI({
   )
 })
 output$condPanel2 <- renderUI({
+  if(input$update > updGlobal) {
+    message("Updating Data...")
+  }
   conditionalPanel(
     condition = "input.incl == true",
     selectizeInput('toIncl', "Include Only",

@@ -1,5 +1,5 @@
 cluster.box <- fluidPage(
-  headerPanel(""),
+  headerPanel("Cluster Observations"),
   sidebarPanel(
     selectInput('method', 'Correlation Method',
                 c("pearson", "kendall", "spearman"), selected="pearson"),

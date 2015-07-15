@@ -10,7 +10,7 @@ Use the [online version](https://sparsedata.shinyapps.io/SparseData-Cluster) of 
 ## Functionality
 * *Upload*` : Upload your own flat files (comma, tab, or semi-colon delimited) for analysis.
 * *Cluster* : Pair-wise correlation is computed between observations (by default, rows of matrix input) and displayed as a heatmap. A summary of the matrix is also given as plain text.
-* *Rank Features* : Choose 2 observations to view an interactive table of the differences for each feature. Note that when data is log2 transformed during *Upload*, these will correspond to log fold changes.
+* *Rank* : Choose 2 observations to view an interactive table of the differences for each feature. Note that when data is log2 transformed during *Upload*, these will correspond to log fold changes.
 
 # Details
 
