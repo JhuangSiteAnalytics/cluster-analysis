@@ -8,7 +8,7 @@ The goal of this project is to build a beautiful parser of data that can interpr
 Use the [online version](https://sparsedata.shinyapps.io/SparseData-Cluster) of SparseData Cluster. See Installation for details on installing locally.
 
 ## Functionality
-* *Upload*` : Upload your own flat files (comma, tab, or semi-colon delimited) for analysis.
+* *Upload* : Upload your own flat files (comma, tab, or semi-colon delimited) for analysis.
 * *Cluster* : Pair-wise correlation is computed between observations (by default, rows of matrix input) and displayed as a heatmap. A summary of the matrix is also given as plain text.
 * *Rank* : Choose 2 observations to view an interactive table of the differences for each feature. Note that when data is log2 transformed during *Upload*, these will correspond to log fold changes.
 
