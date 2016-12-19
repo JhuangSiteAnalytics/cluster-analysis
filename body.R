@@ -49,12 +49,13 @@ acknowledgements <- tabItem(
 
 ## BODY ------------------------------------------------------------------------
 body <- dashboardBody(
-  includeCSS("www/custom.css"),
-  tabItems(
-    start,
-    upload,
-    cluster,
-    ranking,
-    acknowledgements
-  )
-)
+    tags$head(includeScript("www/google-analytics.js")),
+    includeCSS("www/custom.css"),
+    tabItems(
+        start,
+        upload,
+        cluster,
+        ranking,
+        acknowledgements
+        )
+    )
