@@ -31,8 +31,8 @@ upload.box <- fluidPage(
       tags$hr(),
       p('If you want a sample .csv or .tsv file to upload,',
         'you can first download the sample',
-        a(href = 'https://internal.shinyapps.io/gallery/066-upload-file/mtcars.csv', 'mtcars.csv'), 'or',
-        a(href = 'https://internal.shinyapps.io/gallery/066-upload-file/pressure.tsv', 'pressure.tsv'),
+        a(href = 'https://vincentarelbundock.github.io/Rdatasets/csv/datasets/mtcars.csv', 'mtcars.csv'), 'or',
+        a(href = 'https://vincentarelbundock.github.io/Rdatasets/csv/datasets/pressure.csv', 'pressure.csv'),
         'files, and then try uploading them.'
         )
     ),
